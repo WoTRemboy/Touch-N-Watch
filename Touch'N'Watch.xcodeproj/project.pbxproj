@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632BE19028E1C3B2002F4D42 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632BE18F28E1C3B2002F4D42 /* Model.swift */; };
+		63397E1B28D7698C001BC5D3 /* VideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63397E1A28D7698C001BC5D3 /* VideoContainer.swift */; };
+		635C738C28CB647600FA6E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738B28CB647600FA6E51 /* AppDelegate.swift */; };
+		635C738E28CB647600FA6E51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738D28CB647600FA6E51 /* SceneDelegate.swift */; };
+		635C739028CB647600FA6E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738F28CB647600FA6E51 /* ViewController.swift */; };
+		635C739328CB647600FA6E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739128CB647600FA6E51 /* Main.storyboard */; };
+		635C739528CB647700FA6E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C739428CB647700FA6E51 /* Assets.xcassets */; };
+		635C739828CB647700FA6E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739628CB647700FA6E51 /* LaunchScreen.storyboard */; };
+		635C73A328CB647800FA6E51 /* Touch_N_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */; };
+		635C73AD28CB647800FA6E51 /* Touch_N_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */; };
+		635C73AF28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		635C739F28CB647800FA6E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635C738028CB647600FA6E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 635C738728CB647600FA6E51;
+			remoteInfo = "Touch'N'Watch";
+		};
+		635C73A928CB647800FA6E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 635C738028CB647600FA6E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 635C738728CB647600FA6E51;
+			remoteInfo = "Touch'N'Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		632BE18F28E1C3B2002F4D42 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		63397E1A28D7698C001BC5D3 /* VideoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainer.swift; sourceTree = "<group>"; };
+		635C738828CB647600FA6E51 /* Touch'N'Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch'N'Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		635C738B28CB647600FA6E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		635C738D28CB647600FA6E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		635C738F28CB647600FA6E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		635C739228CB647600FA6E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		635C739428CB647700FA6E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		635C739728CB647700FA6E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		635C739928CB647700FA6E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635C739E28CB647800FA6E51 /* Touch'N'WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchTests.swift; sourceTree = "<group>"; };
+		635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITests.swift; sourceTree = "<group>"; };
+		635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		635C738528CB647600FA6E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C739B28CB647800FA6E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C73A528CB647800FA6E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		635C737F28CB647600FA6E51 = {
+			isa = PBXGroup;
+			children = (
+				635C738A28CB647600FA6E51 /* Touch'N'Watch */,
+				635C73A128CB647800FA6E51 /* Touch'N'WatchTests */,
+				635C73AB28CB647800FA6E51 /* Touch'N'WatchUITests */,
+				635C738928CB647600FA6E51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		635C738928CB647600FA6E51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				635C738828CB647600FA6E51 /* Touch'N'Watch.app */,
+				635C739E28CB647800FA6E51 /* Touch'N'WatchTests.xctest */,
+				635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		635C738A28CB647600FA6E51 /* Touch'N'Watch */ = {
+			isa = PBXGroup;
+			children = (
+				635C738B28CB647600FA6E51 /* AppDelegate.swift */,
+				635C738D28CB647600FA6E51 /* SceneDelegate.swift */,
+				635C738F28CB647600FA6E51 /* ViewController.swift */,
+				632BE18F28E1C3B2002F4D42 /* Model.swift */,
+				63397E1A28D7698C001BC5D3 /* VideoContainer.swift */,
+				635C739128CB647600FA6E51 /* Main.storyboard */,
+				635C739428CB647700FA6E51 /* Assets.xcassets */,
+				635C739628CB647700FA6E51 /* LaunchScreen.storyboard */,
+				635C739928CB647700FA6E51 /* Info.plist */,
+			);
+			path = "Touch'N'Watch";
+			sourceTree = "<group>";
+		};
+		635C73A128CB647800FA6E51 /* Touch'N'WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */,
+			);
+			path = "Touch'N'WatchTests";
+			sourceTree = "<group>";
+		};
+		635C73AB28CB647800FA6E51 /* Touch'N'WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */,
+				635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */,
+			);
+			path = "Touch'N'WatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		635C738728CB647600FA6E51 /* Touch'N'Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635C73B228CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'Watch" */;
+			buildPhases = (
+				635C738428CB647600FA6E51 /* Sources */,
+				635C738528CB647600FA6E51 /* Frameworks */,
+				635C738628CB647600FA6E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Touch'N'Watch";
+			productName = "Touch'N'Watch";
+			productReference = 635C738828CB647600FA6E51 /* Touch'N'Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		635C739D28CB647800FA6E51 /* Touch'N'WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635C73B528CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'WatchTests" */;
+			buildPhases = (
+				635C739A28CB647800FA6E51 /* Sources */,
+				635C739B28CB647800FA6E51 /* Frameworks */,
+				635C739C28CB647800FA6E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				635C73A028CB647800FA6E51 /* PBXTargetDependency */,
+			);
+			name = "Touch'N'WatchTests";
+			productName = "Touch'N'WatchTests";
+			productReference = 635C739E28CB647800FA6E51 /* Touch'N'WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		635C73A728CB647800FA6E51 /* Touch'N'WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 635C73B828CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'WatchUITests" */;
+			buildPhases = (
+				635C73A428CB647800FA6E51 /* Sources */,
+				635C73A528CB647800FA6E51 /* Frameworks */,
+				635C73A628CB647800FA6E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				635C73AA28CB647800FA6E51 /* PBXTargetDependency */,
+			);
+			name = "Touch'N'WatchUITests";
+			productName = "Touch'N'WatchUITests";
+			productReference = 635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		635C738028CB647600FA6E51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					635C738728CB647600FA6E51 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					635C739D28CB647800FA6E51 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 635C738728CB647600FA6E51;
+					};
+					635C73A728CB647800FA6E51 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 635C738728CB647600FA6E51;
+					};
+				};
+			};
+			buildConfigurationList = 635C738328CB647600FA6E51 /* Build configuration list for PBXProject "Touch'N'Watch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 635C737F28CB647600FA6E51;
+			productRefGroup = 635C738928CB647600FA6E51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				635C738728CB647600FA6E51 /* Touch'N'Watch */,
+				635C739D28CB647800FA6E51 /* Touch'N'WatchTests */,
+				635C73A728CB647800FA6E51 /* Touch'N'WatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		635C738628CB647600FA6E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635C739828CB647700FA6E51 /* LaunchScreen.storyboard in Resources */,
+				635C739528CB647700FA6E51 /* Assets.xcassets in Resources */,
+				635C739328CB647600FA6E51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C739C28CB647800FA6E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C73A628CB647800FA6E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		635C738428CB647600FA6E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632BE19028E1C3B2002F4D42 /* Model.swift in Sources */,
+				635C739028CB647600FA6E51 /* ViewController.swift in Sources */,
+				63397E1B28D7698C001BC5D3 /* VideoContainer.swift in Sources */,
+				635C738C28CB647600FA6E51 /* AppDelegate.swift in Sources */,
+				635C738E28CB647600FA6E51 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C739A28CB647800FA6E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635C73A328CB647800FA6E51 /* Touch_N_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		635C73A428CB647800FA6E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				635C73AD28CB647800FA6E51 /* Touch_N_WatchUITests.swift in Sources */,
+				635C73AF28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		635C73A028CB647800FA6E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 635C738728CB647600FA6E51 /* Touch'N'Watch */;
+			targetProxy = 635C739F28CB647800FA6E51 /* PBXContainerItemProxy */;
+		};
+		635C73AA28CB647800FA6E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 635C738728CB647600FA6E51 /* Touch'N'Watch */;
+			targetProxy = 635C73A928CB647800FA6E51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		635C739128CB647600FA6E51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				635C739228CB647600FA6E51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		635C739628CB647700FA6E51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				635C739728CB647700FA6E51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		635C73B028CB647800FA6E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		635C73B128CB647800FA6E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		635C73B328CB647800FA6E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Touch'N'Watch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		635C73B428CB647800FA6E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Touch'N'Watch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		635C73B628CB647800FA6E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Touch'N'Watch.app/Touch'N'Watch";
+			};
+			name = Debug;
+		};
+		635C73B728CB647800FA6E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Touch'N'Watch.app/Touch'N'Watch";
+			};
+			name = Release;
+		};
+		635C73B928CB647800FA6E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Touch'N'Watch";
+			};
+			name = Debug;
+		};
+		635C73BA28CB647800FA6E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZFH6DW7S4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.remby.Touch-N-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Touch'N'Watch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		635C738328CB647600FA6E51 /* Build configuration list for PBXProject "Touch'N'Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635C73B028CB647800FA6E51 /* Debug */,
+				635C73B128CB647800FA6E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		635C73B228CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635C73B328CB647800FA6E51 /* Debug */,
+				635C73B428CB647800FA6E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		635C73B528CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635C73B628CB647800FA6E51 /* Debug */,
+				635C73B728CB647800FA6E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		635C73B828CB647800FA6E51 /* Build configuration list for PBXNativeTarget "Touch'N'WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635C73B928CB647800FA6E51 /* Debug */,
+				635C73BA28CB647800FA6E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 635C738028CB647600FA6E51 /* Project object */;
+}
