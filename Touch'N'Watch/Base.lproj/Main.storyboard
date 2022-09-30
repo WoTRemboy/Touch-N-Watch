@@ -85,22 +85,53 @@
                                 <color key="textColor" name="labelTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет соединения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-ef-bSK">
+                                <rect key="frame" x="132.5" y="443" width="149.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="wifiCheckColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxw-5B-4e3">
+                                <rect key="frame" x="152.5" y="475" width="109" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Повторить">
+                                    <color key="baseForegroundColor" name="wifiCheckColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="retryButtonAction:" destination="fab-bD-n1I" eventType="touchUpInside" id="keR-pf-V2R"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gAR-7O-ird">
+                                <rect key="frame" x="162" y="339.5" width="90" height="96"/>
+                                <color key="tintColor" name="wifiCheckColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91.5" id="dMm-07-EAh"/>
+                                </constraints>
+                                <imageReference key="image" image="wifi.slash" catalog="system" symbolScale="large" renderingMode="template"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="khD-nd-zb7"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="P4E-ef-bSK" firstAttribute="centerX" secondItem="Ggm-Ns-3gb" secondAttribute="centerX" id="1rn-1L-owY"/>
+                            <constraint firstItem="P4E-ef-bSK" firstAttribute="top" secondItem="gAR-7O-ird" secondAttribute="bottom" constant="8.5" id="4Lc-1n-QIz"/>
                             <constraint firstItem="khD-nd-zb7" firstAttribute="trailing" secondItem="5TJ-EH-S5k" secondAttribute="trailing" constant="20" id="5h7-UZ-bJy"/>
                             <constraint firstItem="TBo-X7-cB8" firstAttribute="top" secondItem="0Qc-5y-KO2" secondAttribute="bottom" constant="20" id="8q4-Aj-mjb"/>
                             <constraint firstItem="0Qc-5y-KO2" firstAttribute="leading" secondItem="khD-nd-zb7" secondAttribute="leading" constant="20" id="BYz-fL-yAo"/>
                             <constraint firstItem="0Qc-5y-KO2" firstAttribute="top" secondItem="Fzb-4w-ZfB" secondAttribute="bottom" constant="30" id="CKs-Rd-oJQ"/>
+                            <constraint firstItem="khD-nd-zb7" firstAttribute="trailing" secondItem="gAR-7O-ird" secondAttribute="trailing" constant="162" id="Cy5-1b-8UX"/>
+                            <constraint firstItem="gAR-7O-ird" firstAttribute="leading" secondItem="khD-nd-zb7" secondAttribute="leading" constant="162" id="EAG-37-auf"/>
                             <constraint firstItem="TBo-X7-cB8" firstAttribute="leading" secondItem="khD-nd-zb7" secondAttribute="leading" constant="20" id="EaS-13-PT9"/>
                             <constraint firstItem="Fzb-4w-ZfB" firstAttribute="top" secondItem="khD-nd-zb7" secondAttribute="top" constant="25" id="Gcp-7a-TPl"/>
                             <constraint firstItem="Fzb-4w-ZfB" firstAttribute="centerX" secondItem="Ggm-Ns-3gb" secondAttribute="centerX" id="Juw-AX-Zff"/>
                             <constraint firstItem="YXq-gk-8li" firstAttribute="leading" secondItem="khD-nd-zb7" secondAttribute="leading" constant="157" id="Lhi-ax-BaA"/>
                             <constraint firstItem="TBo-X7-cB8" firstAttribute="top" secondItem="5TJ-EH-S5k" secondAttribute="bottom" constant="20" id="QcA-1Y-Nnn"/>
                             <constraint firstItem="Fzb-4w-ZfB" firstAttribute="leading" secondItem="khD-nd-zb7" secondAttribute="leading" constant="20" id="SZE-4p-uXB"/>
+                            <constraint firstItem="rxw-5B-4e3" firstAttribute="top" secondItem="P4E-ef-bSK" secondAttribute="bottom" constant="8" symbolic="YES" id="d6E-MN-XLP"/>
+                            <constraint firstItem="gAR-7O-ird" firstAttribute="top" secondItem="Fzb-4w-ZfB" secondAttribute="bottom" constant="143" id="dpW-3I-cUn"/>
                             <constraint firstItem="khD-nd-zb7" firstAttribute="trailing" secondItem="YdN-tB-1Z1" secondAttribute="trailing" constant="20" id="i2j-JY-1Zt"/>
                             <constraint firstItem="YdN-tB-1Z1" firstAttribute="top" secondItem="0Qc-5y-KO2" secondAttribute="bottom" constant="20" id="mJz-vL-QRB"/>
+                            <constraint firstItem="rxw-5B-4e3" firstAttribute="centerX" secondItem="Ggm-Ns-3gb" secondAttribute="centerX" id="nx5-ab-9xZ"/>
                             <constraint firstItem="khD-nd-zb7" firstAttribute="trailing" secondItem="YXq-gk-8li" secondAttribute="trailing" constant="157" id="pVt-cE-WYt"/>
                             <constraint firstItem="YdN-tB-1Z1" firstAttribute="top" secondItem="YXq-gk-8li" secondAttribute="bottom" constant="185.5" id="qWA-10-zE7"/>
                             <constraint firstItem="khD-nd-zb7" firstAttribute="trailing" secondItem="0Qc-5y-KO2" secondAttribute="trailing" constant="20" id="r3e-ky-L49"/>
@@ -117,6 +148,9 @@
                         <outlet property="imageContent" destination="0Qc-5y-KO2" id="gF6-yV-vNf"/>
                         <outlet property="loadingView" destination="YXq-gk-8li" id="l3o-Wk-dCx"/>
                         <outlet property="nextButton" destination="YdN-tB-1Z1" id="x1y-Gb-B4Y"/>
+                        <outlet property="retryButton" destination="rxw-5B-4e3" id="60o-O1-bDl"/>
+                        <outlet property="retryImage" destination="gAR-7O-ird" id="Ogd-GX-95x"/>
+                        <outlet property="retryLabel" destination="P4E-ef-bSK" id="lVn-Nv-uC6"/>
                         <outlet property="videoTextLabel" destination="5TJ-EH-S5k" id="VV7-NG-9oX"/>
                     </connections>
                 </viewController>
@@ -146,6 +180,7 @@
     <resources>
         <image name="arrow.forward" catalog="system" width="128" height="95"/>
         <image name="return" catalog="system" width="128" height="102"/>
+        <image name="wifi.slash" catalog="system" width="128" height="101"/>
         <namedColor name="buttonColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
@@ -154,6 +189,9 @@
         </namedColor>
         <namedColor name="labelTextColor">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="wifiCheckColor">
+            <color red="0.23500001430511475" green="0.23500001430511475" blue="0.2630000114440918" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

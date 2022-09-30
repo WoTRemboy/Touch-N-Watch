@@ -32,6 +32,14 @@ func nonRepeat(elementPosition: Int) {
     textGiven.remove(at: elementPosition)
 }
 
+func checkConnection() {
+    if NetworkMonitor.shared.isConnected {
+        print("connected")
+    } else {
+        print("not connected")
+    }
+}
+
 //func playerSwitch() {
 //    let currentElement = urlGiven.randomElement()!
 //    let elementPosition = urlGiven.firstIndex(where: {$0 == currentElement})!

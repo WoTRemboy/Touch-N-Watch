@@ -7,12 +7,12 @@
 
 import UIKit
 import AVKit
-import Network
 import AVFoundation
 
 class ViewController: UIViewController {
 
-    var n = 0
+    //var n = 0
+    var observerStatus: NSKeyValueObservation?
     
     let returnImage = UIImage(systemName: "return.left", withConfiguration: UIImage.SymbolConfiguration(pointSize: 17, weight: .unspecified))
     
@@ -30,6 +30,13 @@ class ViewController: UIViewController {
         return videoTextLabel
     }()
     
+    
+    @IBOutlet weak var retryImage: UIImageView!
+    
+    @IBOutlet weak var retryButton: UIButton!
+    
+    @IBOutlet weak var retryLabel: UILabel!
+    
     @IBOutlet weak var videoTextLabel: UILabel!
     
     @IBOutlet weak var imageContent: UIImageView!
@@ -41,6 +48,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var loadingView: UIView!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    @IBAction func retryButtonAction(_ sender: Any) {
+        self.playerSwitchLoad(element: urlQueue.last!!)
+    }
     
     @IBAction func didChangedSegment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -57,7 +68,7 @@ class ViewController: UIViewController {
 //            textQueue.append(textGiven[elementPosition]!)
             playerSwitchLoad(element: currentElement!)
             nonRepeat(elementPosition: elementPosition)
-            n = 0
+            //n = 0
 
         } else if sender.selectedSegmentIndex == 1 {
             changeSegment(urlSegment: urlBest, textSegment: textBest)
@@ -75,7 +86,7 @@ class ViewController: UIViewController {
 //            textQueue.append(textGiven[elementPosition]!)
             playerSwitchLoad(element: currentElement!)
             nonRepeat(elementPosition: elementPosition)
-            n = 0
+            //n = 0
         }
     }
         
@@ -104,7 +115,7 @@ class ViewController: UIViewController {
             playerSwitchLoad(element: previousElement!)
             //nonRepeat(element: previousElement!)
            
-            n -= 1
+            //n -= 1
         }
     }
     
@@ -133,7 +144,19 @@ class ViewController: UIViewController {
             nonRepeat(elementPosition: elementPosition)
             urlGiven.append(urlTempSave)
             textGiven.append(textTempSave)
-            n = 0
+            //n = 0
+            
+//            UIView.animate(withDuration: 0.9) {
+//                self.textLabel.alpha = 0
+//            }
+            
+//            textLabel.alpha = 1
+//            UITextField.animate(withDuration: 2, animations: {
+//                self.textLabel.alpha = 0
+//            }) { (finished) in
+//                self.textLabel.isHidden = finished
+//            }
+            
         } else {
             let currentElement = urlGiven.randomElement()!
 //            let elementPosition = urlGiven.firstIndex(where: {$0 == currentElement})!
@@ -144,12 +167,13 @@ class ViewController: UIViewController {
 //            textQueue.append(textGiven[elementPosition]!)
             //urlGiven.remove(at: elementPosition!)
             nonRepeat(elementPosition: elementPosition)
-            n += 1
+            //n += 1
         }
         
     }
     
     private func firstLoad() {
+
         urlGiven = urlHot
         textGiven = textHot
         textLabel.alpha = 0
@@ -159,21 +183,23 @@ class ViewController: UIViewController {
         //let elementPosition = urlGiven.firstIndex(where: {$0 == urlQueue[0]})!
         let elementPosition = urlGiven.firstIndex(of: urlQueue[0])!
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.nextButton.isEnabled = true
-            self.backButton.isEnabled = true
-        }
-        UIView.animate(withDuration: 0.1) {
-            self.textLabel.alpha = 1
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 10.5) {
+//            self.nextButton.isEnabled = true
+//            self.backButton.isEnabled = true
+//        }
+//        UIView.animate(withDuration: 0.1) {
+//            self.textLabel.alpha = 1
+//        }
         nonRepeat(elementPosition: elementPosition)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //retryLabel.isHidden = true
         
         firstLoad()
         showSpinner()
+        checkConnection()
     }
     
     private func showSpinner() {
@@ -195,6 +221,8 @@ class ViewController: UIViewController {
         let player = AVQueuePlayer(items: [playerItem])
         playerLayer = AVPlayerLayer(player: player)
         
+        playerLayer?.isHidden = true
+        
         self.playerLooper = AVPlayerLooper(player: player, templateItem: playerItem)
         self.view.layer.addSublayer(playerLayer!)
         playerLayer!.frame = imageContent.frame
@@ -205,31 +233,65 @@ class ViewController: UIViewController {
         
         view.addSubview(textLabel)
         
+        observerStatus = playerItem.observe(\.status, changeHandler: { (item, value) in
+            debugPrint("status: \(item.status.rawValue)")
+            if item.status == .failed {
+                print("failed")
+                self.retryLabel.isHidden = false
+                self.retryButton.isHidden = false
+                self.retryImage.isHidden = false
+                self.nextButton.isEnabled = false
+                self.backButton.isEnabled = false
+                self.hideSpinner()
+            } else if item.status == .readyToPlay {
+                self.retryLabel.isHidden = true
+                self.retryButton.isHidden = true
+                self.retryImage.isHidden = true
+                self.showSpinner()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.playerLayer?.isHidden = false
+                    //self.playerLayer?.player?.play()
+                    self.nextButton.isEnabled = true
+                    self.backButton.isEnabled = true
+                    UIView.animate(withDuration: 0.1) {
+                        self.textLabel.alpha = 1
+                    }
+                }
+//                self.playerLayer?.isHidden = false
+//                self.playerLayer?.player?.play()
+                
+            }
+        })
+        
     }
     
     
     private func playerSwitchLoad(element: URL) {
         playerLayer?.isHidden = true
+        
         nextButton.isEnabled = false
         backButton.isEnabled = false
-        textLabel.alpha = 0
+//        textLabel.alpha = 0
+                    //textLabel.alpha = 1
+        UIView.animate(withDuration: 0.1) {
+            self.textLabel.alpha = 0
+        }
 
         let playerItemReplace = AVPlayerItem(url: element)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.playerLayer?.player?.replaceCurrentItem(with: playerItemReplace)
             self.viewDidAppear(true)
-            self.playerLayer?.isHidden = true
+            //self.playerLayer?.isHidden = true
+
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.playerLayer?.isHidden = false
-            self.playerLayer?.player?.play()
-            
-            self.nextButton.isEnabled = true
-            self.backButton.isEnabled = true
-            
-            UIView.animate(withDuration: 0.1) {
-                self.textLabel.alpha = 1
-            }
+            //self.playerLayer?.isHidden = false
+            //self.playerLayer?.player?.play()
+//
+//            self.nextButton.isEnabled = true
+//            self.backButton.isEnabled = true
+//
+//
         }
 
     }
@@ -255,7 +317,10 @@ class ViewController: UIViewController {
             nextButton.setImage(nextImage, for: .normal)
         }
         
+        checkConnection()
         
         }
-    }
+    
+
+}
 

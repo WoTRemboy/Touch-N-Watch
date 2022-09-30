@@ -18,6 +18,7 @@
 		635C73A328CB647800FA6E51 /* Touch_N_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */; };
 		635C73AD28CB647800FA6E51 /* Touch_N_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */; };
 		635C73AF28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */; };
+		63B33C7428E7009E00E3B40C /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITests.swift; sourceTree = "<group>"; };
 		635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				635C738B28CB647600FA6E51 /* AppDelegate.swift */,
 				635C738D28CB647600FA6E51 /* SceneDelegate.swift */,
 				635C738F28CB647600FA6E51 /* ViewController.swift */,
+				63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */,
 				632BE18F28E1C3B2002F4D42 /* Model.swift */,
 				63397E1A28D7698C001BC5D3 /* VideoContainer.swift */,
 				635C739128CB647600FA6E51 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632BE19028E1C3B2002F4D42 /* Model.swift in Sources */,
+				63B33C7428E7009E00E3B40C /* NetworkMonitor.swift in Sources */,
 				635C739028CB647600FA6E51 /* ViewController.swift in Sources */,
 				63397E1B28D7698C001BC5D3 /* VideoContainer.swift in Sources */,
 				635C738C28CB647600FA6E51 /* AppDelegate.swift in Sources */,
