@@ -39,13 +39,3 @@ func checkConnection() {
         print("not connected")
     }
 }
-
-//func playerSwitch() {
-//    let currentElement = urlGiven.randomElement()!
-//    let elementPosition = urlGiven.firstIndex(where: {$0 == currentElement})!
-//    
-//    arrayAppend(currentElement: currentElement!, elementPosition: elementPosition)
-//    
-//    playerSwitchLoad(element: currentElement!)
-//    nonRepeat(elementPosition: elementPosition)
-//}

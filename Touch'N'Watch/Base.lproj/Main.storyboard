@@ -145,6 +145,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="A3I-X3-CXN" id="uMx-Ag-qzM"/>
                         <outlet property="backButton" destination="TBo-X7-cB8" id="LzA-TA-Me8"/>
+                        <outlet property="changeSegmentOutlet" destination="Fzb-4w-ZfB" id="XUL-Rd-p3H"/>
                         <outlet property="imageContent" destination="0Qc-5y-KO2" id="gF6-yV-vNf"/>
                         <outlet property="loadingView" destination="YXq-gk-8li" id="l3o-Wk-dCx"/>
                         <outlet property="nextButton" destination="YdN-tB-1Z1" id="x1y-Gb-B4Y"/>

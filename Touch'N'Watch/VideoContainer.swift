@@ -119,7 +119,7 @@ let textHot25 = "Первый коммит"
 
 let urlHot26 = URL(string: "https://static.devli.ru/public/images/v/201307/1577fa0a-e731-4928-a7d7-1d175ce22d26.mp4")
 
-let textHot26 = "Начинающий разрабодчик в погоне за новыми технологиями"
+let textHot26 = "Начинающий разработчик в погоне за новыми технологиями"
 
 let urlHot27 = URL(string: "https://static.devli.ru/public/images/v/201308/6044be43-ab19-4758-a54c-42f253d9eb5f.mp4")
 
