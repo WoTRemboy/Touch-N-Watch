@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		632BE19028E1C3B2002F4D42 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632BE18F28E1C3B2002F4D42 /* Model.swift */; };
 		63397E1B28D7698C001BC5D3 /* VideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63397E1A28D7698C001BC5D3 /* VideoContainer.swift */; };
+		634B9E0D2902B4FD0019B57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 634B9E0C2902B4FD0019B57B /* GoogleService-Info.plist */; };
 		635C738C28CB647600FA6E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738B28CB647600FA6E51 /* AppDelegate.swift */; };
 		635C738E28CB647600FA6E51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738D28CB647600FA6E51 /* SceneDelegate.swift */; };
 		635C739028CB647600FA6E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C738F28CB647600FA6E51 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		632BE18F28E1C3B2002F4D42 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		63397E1A28D7698C001BC5D3 /* VideoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainer.swift; sourceTree = "<group>"; };
+		634B9E0C2902B4FD0019B57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		635C738828CB647600FA6E51 /* Touch'N'Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch'N'Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C738B28CB647600FA6E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		635C738D28CB647600FA6E51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,10 +113,11 @@
 				63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */,
 				632BE18F28E1C3B2002F4D42 /* Model.swift */,
 				63397E1A28D7698C001BC5D3 /* VideoContainer.swift */,
-				635C739128CB647600FA6E51 /* Main.storyboard */,
 				635C739428CB647700FA6E51 /* Assets.xcassets */,
+				635C739128CB647600FA6E51 /* Main.storyboard */,
 				635C739628CB647700FA6E51 /* LaunchScreen.storyboard */,
 				635C739928CB647700FA6E51 /* Info.plist */,
+				634B9E0C2902B4FD0019B57B /* GoogleService-Info.plist */,
 			);
 			path = "Touch'N'Watch";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				635C739828CB647700FA6E51 /* LaunchScreen.storyboard in Resources */,
+				634B9E0D2902B4FD0019B57B /* GoogleService-Info.plist in Resources */,
 				635C739528CB647700FA6E51 /* Assets.xcassets in Resources */,
 				635C739328CB647600FA6E51 /* Main.storyboard in Resources */,
 			);

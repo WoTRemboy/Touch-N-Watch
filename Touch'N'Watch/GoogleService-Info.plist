@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>527979951698-27rrva5vbmnso9floc5iabevchr7stu8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.527979951698-27rrva5vbmnso9floc5iabevchr7stu8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBET_leOYd4os1QnjobSUn-vbzMmY7HSgo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>527979951698</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.remby.Touch-N-Watch</string>
+	<key>PROJECT_ID</key>
+	<string>touch-n-watch-d5f93</string>
+	<key>STORAGE_BUCKET</key>
+	<string>touch-n-watch-d5f93.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:527979951698:ios:5615208cc2bc28ef98118b</string>
+</dict>
+</plist>
