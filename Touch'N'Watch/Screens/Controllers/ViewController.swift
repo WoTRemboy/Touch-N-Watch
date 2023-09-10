@@ -30,23 +30,14 @@ class ViewController: UIViewController {
     }()
     
     @IBOutlet weak var changeSegmentOutlet: UISegmentedControl!
-    
     @IBOutlet weak var retryImage: UIImageView!
-    
     @IBOutlet weak var retryButton: UIButton!
-    
     @IBOutlet weak var retryLabel: UILabel!
-    
     @IBOutlet weak var videoTextLabel: UILabel!
-    
     @IBOutlet weak var imageContent: UIImageView!
-    
     @IBOutlet weak var backButton: UIButton!
-    
     @IBOutlet weak var nextButton: UIButton!
-    
     @IBOutlet weak var loadingView: UIView!
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBAction func retryButtonAction(_ sender: Any) {
@@ -56,12 +47,9 @@ class ViewController: UIViewController {
     @IBAction func didChangedSegment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             changeSegment(urlSegment: urlHot, textSegment: textHot)
-            
             videoPlay()
-
         } else if sender.selectedSegmentIndex == 1 {
             changeSegment(urlSegment: urlBest, textSegment: textBest)
-           
             videoPlay()
         }
     }
@@ -121,7 +109,6 @@ class ViewController: UIViewController {
     }
     
     private func firstLoad() {
-
         urlGiven = urlHot
         textGiven = textHot
         textLabel.alpha = 0
@@ -144,7 +131,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         firstLoad()
         showSpinner()
         checkConnection()
@@ -204,10 +190,8 @@ class ViewController: UIViewController {
         })
     }
     
-    
     private func playerSwitchLoad(element: URL) {
         playerLayer?.isHidden = true
-        
         nextButton.isEnabled = false
         backButton.isEnabled = false
         changeSegmentOutlet.isEnabled = false
@@ -215,7 +199,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.1) {
             self.textLabel.alpha = 0
         }
-
         let playerItemReplace = AVPlayerItem(url: element)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.playerLayer?.player?.replaceCurrentItem(with: playerItemReplace)
@@ -223,7 +206,6 @@ class ViewController: UIViewController {
 
         }
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -239,7 +221,6 @@ class ViewController: UIViewController {
         } else {
             backButton.setImage(returnImage, for: .normal)
         }
-        
         if urlGiven.count == 0 && urlQueue.count != 1 {
             nextButton.setImage(endImage, for: .normal)
         } else {

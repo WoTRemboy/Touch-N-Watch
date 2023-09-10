@@ -16,9 +16,6 @@
 		635C739328CB647600FA6E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739128CB647600FA6E51 /* Main.storyboard */; };
 		635C739528CB647700FA6E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C739428CB647700FA6E51 /* Assets.xcassets */; };
 		635C739828CB647700FA6E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739628CB647700FA6E51 /* LaunchScreen.storyboard */; };
-		635C73A328CB647800FA6E51 /* Touch_N_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */; };
-		635C73AD28CB647800FA6E51 /* Touch_N_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */; };
-		635C73AF28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */; };
 		63B33C7428E7009E00E3B40C /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +49,7 @@
 		635C739728CB647700FA6E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		635C739928CB647700FA6E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		635C739E28CB647800FA6E51 /* Touch'N'WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchTests.swift; sourceTree = "<group>"; };
 		635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITests.swift; sourceTree = "<group>"; };
-		635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch_N_WatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				635C738A28CB647600FA6E51 /* Touch'N'Watch */,
-				635C73A128CB647800FA6E51 /* Touch'N'WatchTests */,
-				635C73AB28CB647800FA6E51 /* Touch'N'WatchUITests */,
 				635C738928CB647600FA6E51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,36 +99,83 @@
 		635C738A28CB647600FA6E51 /* Touch'N'Watch */ = {
 			isa = PBXGroup;
 			children = (
-				635C738B28CB647600FA6E51 /* AppDelegate.swift */,
-				635C738D28CB647600FA6E51 /* SceneDelegate.swift */,
-				635C738F28CB647600FA6E51 /* ViewController.swift */,
-				63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */,
-				632BE18F28E1C3B2002F4D42 /* Model.swift */,
-				63397E1A28D7698C001BC5D3 /* VideoContainer.swift */,
-				635C739428CB647700FA6E51 /* Assets.xcassets */,
-				635C739128CB647600FA6E51 /* Main.storyboard */,
-				635C739628CB647700FA6E51 /* LaunchScreen.storyboard */,
+				63976F482AADCBA700B74575 /* Application */,
+				63976F492AADCC8F00B74575 /* Screens */,
+				63976F4F2AADCD0900B74575 /* Networking */,
+				63976F4D2AADCCE900B74575 /* Extentions */,
+				63976F4E2AADCCF700B74575 /* Supporting Files */,
 				635C739928CB647700FA6E51 /* Info.plist */,
 				634B9E0C2902B4FD0019B57B /* GoogleService-Info.plist */,
 			);
 			path = "Touch'N'Watch";
 			sourceTree = "<group>";
 		};
-		635C73A128CB647800FA6E51 /* Touch'N'WatchTests */ = {
+		63976F482AADCBA700B74575 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				635C73A228CB647800FA6E51 /* Touch_N_WatchTests.swift */,
+				635C738B28CB647600FA6E51 /* AppDelegate.swift */,
+				635C738D28CB647600FA6E51 /* SceneDelegate.swift */,
 			);
-			path = "Touch'N'WatchTests";
+			path = Application;
 			sourceTree = "<group>";
 		};
-		635C73AB28CB647800FA6E51 /* Touch'N'WatchUITests */ = {
+		63976F492AADCC8F00B74575 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				635C73AC28CB647800FA6E51 /* Touch_N_WatchUITests.swift */,
-				635C73AE28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift */,
+				63976F4C2AADCCAD00B74575 /* Model */,
+				63976F4B2AADCCA800B74575 /* Views */,
+				63976F4A2AADCC9E00B74575 /* Controllers */,
 			);
-			path = "Touch'N'WatchUITests";
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		63976F4A2AADCC9E00B74575 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				635C738F28CB647600FA6E51 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63976F4B2AADCCA800B74575 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				635C739128CB647600FA6E51 /* Main.storyboard */,
+				635C739628CB647700FA6E51 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63976F4C2AADCCAD00B74575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				632BE18F28E1C3B2002F4D42 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63976F4D2AADCCE900B74575 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		63976F4E2AADCCF700B74575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63397E1A28D7698C001BC5D3 /* VideoContainer.swift */,
+				635C739428CB647700FA6E51 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63976F4F2AADCD0900B74575 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635C73A328CB647800FA6E51 /* Touch_N_WatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635C73AD28CB647800FA6E51 /* Touch_N_WatchUITests.swift in Sources */,
-				635C73AF28CB647800FA6E51 /* Touch_N_WatchUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
