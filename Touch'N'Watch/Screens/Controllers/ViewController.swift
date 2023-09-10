@@ -13,14 +13,6 @@ class ViewController: UIViewController {
 
     var observerStatus: NSKeyValueObservation?
     
-    let returnImage = UIImage(systemName: "return.left", withConfiguration: UIImage.SymbolConfiguration(pointSize: 17, weight: .unspecified))
-    
-    let reloadImage = UIImage(systemName: "arrow.clockwise", withConfiguration: UIImage.SymbolConfiguration(pointSize: 17, weight: .unspecified))
-    
-    let nextImage = UIImage(systemName: "arrow.forward", withConfiguration: UIImage.SymbolConfiguration(pointSize: 17, weight: .unspecified))
-    
-    let endImage = UIImage(systemName: "arrow.counterclockwise", withConfiguration: UIImage.SymbolConfiguration(pointSize: 17, weight: .unspecified))
-    
     lazy var textLabel: UILabel = {
         videoTextLabel.numberOfLines = 0
         videoTextLabel.lineBreakMode = .byWordWrapping
@@ -217,14 +209,14 @@ class ViewController: UIViewController {
         checkConnection()
 
         if urlQueue.count == 1 {
-            backButton.setImage(reloadImage, for: .normal)
+            backButton.setImage(.Symbols.reload, for: .normal)
         } else {
-            backButton.setImage(returnImage, for: .normal)
+            backButton.setImage(.Symbols.back, for: .normal)
         }
         if urlGiven.count == 0 && urlQueue.count != 1 {
-            nextButton.setImage(endImage, for: .normal)
+            nextButton.setImage(.Symbols.end, for: .normal)
         } else {
-            nextButton.setImage(nextImage, for: .normal)
+            nextButton.setImage(.Symbols.next, for: .normal)
         }
     }
 }

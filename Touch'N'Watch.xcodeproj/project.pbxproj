@@ -16,6 +16,7 @@
 		635C739328CB647600FA6E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739128CB647600FA6E51 /* Main.storyboard */; };
 		635C739528CB647700FA6E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635C739428CB647700FA6E51 /* Assets.xcassets */; };
 		635C739828CB647700FA6E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635C739628CB647700FA6E51 /* LaunchScreen.storyboard */; };
+		63976F512AADCE9600B74575 /* UIImage + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63976F502AADCE9600B74575 /* UIImage + Extention.swift */; };
 		63B33C7428E7009E00E3B40C /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		635C739928CB647700FA6E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		635C739E28CB647800FA6E51 /* Touch'N'WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		635C73A828CB647800FA6E51 /* Touch'N'WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Touch'N'WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63976F502AADCE9600B74575 /* UIImage + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extention.swift"; sourceTree = "<group>"; };
 		63B33C7328E7009E00E3B40C /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 		63976F4D2AADCCE900B74575 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				63976F502AADCE9600B74575 /* UIImage + Extention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				632BE19028E1C3B2002F4D42 /* Model.swift in Sources */,
 				63B33C7428E7009E00E3B40C /* NetworkMonitor.swift in Sources */,
 				635C739028CB647600FA6E51 /* ViewController.swift in Sources */,
+				63976F512AADCE9600B74575 /* UIImage + Extention.swift in Sources */,
 				63397E1B28D7698C001BC5D3 /* VideoContainer.swift in Sources */,
 				635C738C28CB647600FA6E51 /* AppDelegate.swift in Sources */,
 				635C738E28CB647600FA6E51 /* SceneDelegate.swift in Sources */,
